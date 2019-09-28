@@ -1,5 +1,8 @@
 export default {
 	Query: {
-		sayHello: () => 'Hello'
+		sayHello: () => {
+			conset;
+			return 'Hello';
+		}
 	}
 };
