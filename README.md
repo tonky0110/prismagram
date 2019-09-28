@@ -7,6 +7,8 @@ prisma 연결
 4) console등록
 5) prisma init으로 신규 서비스 생성.
 
+env.js - dotenv를 import하고 변수를 config함.(3.4)
+
 ## User Stories
 
 - [ ] Log in

@@ -1,5 +1,5 @@
 import { prisma } from '../../../../generated/prisma-client';
-import { generateSecret } from '../../../util';
+import { generateSecret } from '../../../utils';
 
 export default {
 	Mutation: {
