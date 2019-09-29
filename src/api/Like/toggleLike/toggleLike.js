@@ -5,15 +5,13 @@ export default {
 	Mutation: {
 		toggleLike: async (_, args, { request }) => {
 			isAuthenticated(request);
-			console.log('request.user: ', request.user);
 			const { user } = request;
 			const { postId } = args;
+			const filterOptions = { AND: [ { user: { id: user.id } }, { post: { id: postId } } ] };
 			try {
-				const existingLike = await prisma.$exists.like({
-					AND: [ { user: { id: user.id } }, { post: { id: postId } } ]
-				});
+				const existingLike = await prisma.$exists.like(filterOptions);
 				if (existingLike) {
-					// TO DO
+					await prisma.deleteLike(filterOptions);
 				} else {
 					await prisma.createLike({
 						user: {
@@ -30,7 +28,6 @@ export default {
 				}
 				return true;
 			} catch (error) {
-				console.log(error);
 				return false;
 			}
 		}
