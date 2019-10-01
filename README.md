@@ -19,10 +19,11 @@ env.js - dotenv를 import하고 변수를 config함.(3.4)
 - [X] Comment on a photo
 - [X] Search by user
 - [X] Search by location
-- [ ] See user profile
-- [ ] Follow / Unfollow User
-- [ ] See the full photo
+- [X] Follow User
+- [X] Unfollow User
 - [ ] Edit my profile
+- [ ] See user profile
+- [ ] See the full photo
 - [ ] Upload a photo
 - [ ] Edit the photo (Delete)
 - [ ] See the feed
