@@ -31,6 +31,7 @@ type Post {
 	createdAt: String
 	updatedAt: String
 	isLiked: Boolean!
+	likeCount: Int!
 }
 
 type Like {
