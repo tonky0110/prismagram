@@ -26,8 +26,8 @@ env.js - dotenv를 import하고 변수를 config함.(3.4)
 - [X] See the full photo
 - [X] Upload a photo
 - [X] Edit the photo (Delete)
-- [ ] See the feed
-- [ ] See Rooms
-- [ ] See Room
+- [X] See the feed
 - [ ] Send private Message
+- [X] See Rooms
+- [ ] See Room
 - [ ] Receive Message(Realtime)
