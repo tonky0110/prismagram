@@ -27,3 +27,7 @@ env.js - dotenv를 import하고 변수를 config함.(3.4)
 - [ ] Upload a photo
 - [ ] Edit the photo (Delete)
 - [ ] See the feed
+- [ ] See Rooms
+- [ ] See Room
+- [ ] Send private Message
+- [ ] Receive Message(Realtime)
