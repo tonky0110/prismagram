@@ -21,11 +21,11 @@ env.js - dotenv를 import하고 변수를 config함.(3.4)
 - [X] Search by location
 - [X] Follow User
 - [X] Unfollow User
-- [ ] Edit my profile
-- [ ] See user profile
-- [ ] See the full photo
-- [ ] Upload a photo
-- [ ] Edit the photo (Delete)
+- [X] Edit my profile
+- [X] See user profile
+- [X] See the full photo
+- [X] Upload a photo
+- [X] Edit the photo (Delete)
 - [ ] See the feed
 - [ ] See Rooms
 - [ ] See Room
