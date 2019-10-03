@@ -29,5 +29,5 @@ env.js - dotenv를 import하고 변수를 config함.(3.4)
 - [X] See the feed
 - [X] Send private Message
 - [X] See Rooms
-- [ ] See Room
+- [X] See Room
 - [ ] Receive Message(Realtime)
