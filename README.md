@@ -30,4 +30,4 @@ env.js - dotenv를 import하고 변수를 config함.(3.4)
 - [X] Send private Message
 - [X] See Rooms
 - [X] See Room
-- [ ] Receive Message(Realtime)
+- [X] Receive Message(Realtime)
