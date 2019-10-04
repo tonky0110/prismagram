@@ -4,13 +4,23 @@ export default {
 	Mutation: {
 		createAccount: (_, args) => {
 			const { username, email, firstName = '', lastName = '', bio = '' } = args;
-			return prisma.createUser({
-				username,
-				email,
-				firstName,
-				lastName,
-				bio
-			});
+			const exists = prisma.$exists.user({ username });
+			if (exists) {
+				throw Error('This username is already taken.');
+			}
+			try {
+				prisma.createUser({
+					username,
+					email,
+					firstName,
+					lastName,
+					bio
+				});
+				return true;
+			} catch (error) {
+				console.log('createAction.error:', error);
+				return false;
+			}
 		}
 	}
 };
