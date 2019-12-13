@@ -1,6 +1,6 @@
 type User {
   id: ID! @id
-  avatar: String @default(value: "")
+  avatar: String @default(value: "https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.accountingweb.co.uk%2Fsites%2Fall%2Fmodules%2Fcustom%2Fsm_pp_user_profile%2Fimg%2Fdefault-user.png&f=1&nofb=1")
   username: String! @unique
   email: String! @unique
   firstName: String @default(value: "")
